@@ -1,0 +1,791 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Primary Research 2026&lt;/title&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--ink: #1a1208;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--paper: #f5f0e8;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--accent: #c84b2f;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gold: #b8902a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--muted: #7a6e5f;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--rule: #d4c9b0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--highlight: #fff8ee;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>* { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--paper);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.7;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Masthead */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--paper);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 48px 24px 36px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 4px solid var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead::before {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: repeating-linear-gradient(</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0deg,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transparent,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transparent 40px,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>rgba(255,255,255,0.02) 40px,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>rgba(255,255,255,0.02) 41px</p>
+<p class="p1"><span class="Apple-converted-space">    </span>);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead-tag {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead h1 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: clamp(28px, 5vw, 52px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width: 700px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto 12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead h1 em {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead-sub {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(245,240,232,0.6);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width: 480px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 0.3px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead-rule {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 20px auto 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Layout */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width: 720px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0 24px 80px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Section headers - newspaper style */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-header {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: 1fr auto 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 48px 0 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-header::before,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-header::after {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--rule);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>white-space: nowrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-number {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-right: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Question blocks */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.question {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid var(--rule);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>animation: fadeUp 0.4s ease both;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.question:last-child { border-bottom: none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>@keyframes fadeUp {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>from { opacity: 0; transform: translateY(12px); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.question-label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.4;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.question-hint {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Inputs */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>input[type="text"],</p>
+<p class="p1"><span class="Apple-converted-space">  </span>input[type="number"],</p>
+<p class="p1"><span class="Apple-converted-space">  </span>select,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>textarea {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid var(--rule);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 12px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: border-color 0.2s, box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>input:focus, select:focus, textarea:focus {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 0 0 3px rgba(184,144,42,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>select {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a6e5f' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-repeat: no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-position: right 16px center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-right: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>textarea { resize: vertical; min-height: 80px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Radio / Checkbox grids */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.options-grid {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.options-grid.single-col {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.option-label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 11px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid var(--rule);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all 0.15s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.option-label:hover {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--highlight);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.option-label input {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>accent-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.option-label input:checked + span {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.option-label:has(input:checked) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #fff5f3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Slider */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.slider-wrap {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>input[type="range"] {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--rule);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>input[type="range"]::-webkit-slider-thumb {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 2px solid white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 1px 4px rgba(0,0,0,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.slider-value {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-width: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: right;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Subscription grid - the OTT checkbox matrix */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-grid {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-card {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid var(--rule);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 10px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all 0.15s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-card:has(input:checked) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-color: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #fff5f3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-card input { display: none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-card-name {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-card-cat {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub-card:has(input:checked) .sub-card-name { color: var(--accent); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Progress */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.progress-bar {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 0; left: 0; right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>z-index: 100;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.progress-fill {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: width 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 0%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Submit */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.submit-area {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.submit-btn {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--ink);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--paper);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 16px 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'DM Sans', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: all 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.submit-btn::after {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transform: scaleX(0);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transform-origin: left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: transform 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.submit-btn:hover::after { transform: scaleX(1); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.submit-btn span { position: relative; z-index: 1; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.submit-note {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Thank you state */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.thankyou {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 80px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.thankyou.visible { display: block; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.survey-form.hidden { display: none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.thankyou h2 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.thankyou p { color: var(--muted); max-width: 400px; margin: 0 auto; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Inline two-col */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.two-col {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media (max-width: 500px) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.two-col { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.options-grid { grid-template-columns: 1fr; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* Decorative pull quote */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.pull-quote {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-left: 3px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 12px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 32px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Playfair Display', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="progress-bar"&gt;&lt;div class="progress-fill" id="progress"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="masthead"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="masthead-tag"&gt;Primary Research · 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;The Indian Subscription &lt;em&gt;Audit&lt;/em&gt;&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="masthead-sub"&gt;How are Indian households really spending on subscriptions? Help us find out — this takes 4 minutes.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="masthead-rule"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="pull-quote"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>"From Netflix to Zomato Gold — subscriptions have quietly become a significant household expense. But how much are we actually spending, and who's really paying?"</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;form class="survey-form" id="surveyForm"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SECTION 1: DEMOGRAPHICS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;&lt;span class="section-number"&gt;1&lt;/span&gt;About You&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;What is your age group?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="age" value="18-24"&gt; &lt;span&gt;18–24&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="age" value="25-34"&gt; &lt;span&gt;25–34&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="age" value="35-44"&gt; &lt;span&gt;35–44&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="age" value="45-54"&gt; &lt;span&gt;45–54&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="age" value="55+"&gt; &lt;span&gt;55 and above&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;City / Tier of residence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="city_tier" value="metro"&gt; &lt;span&gt;Metro (Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Kolkata)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="city_tier" value="tier1"&gt; &lt;span&gt;Tier 1 city&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="city_tier" value="tier2"&gt; &lt;span&gt;Tier 2 city&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="city_tier" value="tier3"&gt; &lt;span&gt;Tier 3 / Small town&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;What is your monthly household income (approximate)?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="income" value="below30k"&gt; &lt;span&gt;Below ₹30,000&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="income" value="30-75k"&gt; &lt;span&gt;₹30,000 – ₹75,000&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="income" value="75k-1.5L"&gt; &lt;span&gt;₹75,000 – ₹1.5 lakh&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="income" value="1.5L-3L"&gt; &lt;span&gt;₹1.5 lakh – ₹3 lakh&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="income" value="above3L"&gt; &lt;span&gt;Above ₹3 lakh&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="income" value="prefer_not"&gt; &lt;span&gt;Prefer not to say&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;What is your household type?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="household"&gt; &lt;span&gt;Living alone&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="household"&gt; &lt;span&gt;Nuclear family (2–4 members)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="household"&gt; &lt;span&gt;Joint/extended family (5+ members)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="household"&gt; &lt;span&gt;Shared accommodation (flatmates)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SECTION 2: SUBSCRIPTIONS HELD --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;&lt;span class="section-number"&gt;2&lt;/span&gt;Your Subscriptions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Which of the following are you currently subscribed to? &lt;em&gt;Select all that apply.&lt;/em&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;Include subscriptions others in your household use, even if you pay for them.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="sub-grid" id="subGrid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Entertainment --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="netflix"&gt; &lt;span class="sub-card-name"&gt;Netflix&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="prime_video"&gt; &lt;span class="sub-card-name"&gt;Prime Video&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="hotstar"&gt; &lt;span class="sub-card-name"&gt;Disney+ Hotstar&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="sonyliv"&gt; &lt;span class="sub-card-name"&gt;SonyLIV&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="jiocinema"&gt; &lt;span class="sub-card-name"&gt;JioCinema&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="zee5"&gt; &lt;span class="sub-card-name"&gt;ZEE5&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="mxplayer"&gt; &lt;span class="sub-card-name"&gt;MX Player&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Entertainment&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Music --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="spotify"&gt; &lt;span class="sub-card-name"&gt;Spotify&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Music&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="youtube_premium"&gt; &lt;span class="sub-card-name"&gt;YouTube Premium&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Music/Video&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="jiosaavn"&gt; &lt;span class="sub-card-name"&gt;JioSaavn Pro&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Music&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="apple_music"&gt; &lt;span class="sub-card-name"&gt;Apple Music&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Music&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Tech &amp; Productivity --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="prime"&gt; &lt;span class="sub-card-name"&gt;Amazon Prime&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Retail + Video&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="icloud"&gt; &lt;span class="sub-card-name"&gt;iCloud+&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Storage&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="google_one"&gt; &lt;span class="sub-card-name"&gt;Google One&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Storage&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="microsoft365"&gt; &lt;span class="sub-card-name"&gt;Microsoft 365&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Productivity&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="chatgpt"&gt; &lt;span class="sub-card-name"&gt;ChatGPT Plus&lt;/span&gt;&lt;span class="sub-card-cat"&gt;AI&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Food &amp; Lifestyle --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="zomato_gold"&gt; &lt;span class="sub-card-name"&gt;Zomato Gold&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Food&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="swiggy_one"&gt; &lt;span class="sub-card-name"&gt;Swiggy One&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Food&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="blinkit_pass"&gt; &lt;span class="sub-card-name"&gt;Blinkit Pass&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Grocery&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="cult_fit"&gt; &lt;span class="sub-card-name"&gt;Cult.fit&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Fitness&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- News &amp; Reading --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="newspaper"&gt; &lt;span class="sub-card-name"&gt;News/Magazine&lt;/span&gt;&lt;span class="sub-card-cat"&gt;News&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="kindle"&gt; &lt;span class="sub-card-name"&gt;Kindle Unlimited&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Reading&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="sub-card"&gt;&lt;input type="checkbox" name="subs" value="other_sub"&gt; &lt;span class="sub-card-name"&gt;Other&lt;/span&gt;&lt;span class="sub-card-cat"&gt;Various&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Before you answer the next question — take a guess. How much do you think you spend on subscriptions per month in total?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;We'll ask you to enumerate them next. This helps us understand perception vs. reality.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="slider-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="range" id="guessSlider" min="0" max="5000" step="100" value="500" oninput="updateSlider(this, 'guessVal')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="slider-value" id="guessVal"&gt;₹500&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SECTION 3: SPEND &amp; BEHAVIOUR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;&lt;span class="section-number"&gt;3&lt;/span&gt;Spend &amp; Behaviour&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Now, what is your actual monthly spend across all subscriptions (combined)?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;Add up what you pay monthly. For annual plans, divide by 12.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="slider-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="range" id="actualSlider" min="0" max="10000" step="100" value="1000" oninput="updateSlider(this, 'actualVal')"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="slider-value" id="actualVal"&gt;₹1,000&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Who primarily pays for most of your subscriptions?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid single-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="payer" value="self"&gt; &lt;span&gt;I pay for everything myself&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="payer" value="partner"&gt; &lt;span&gt;My partner / spouse pays&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="payer" value="parent"&gt; &lt;span&gt;My parents pay&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="payer" value="shared"&gt; &lt;span&gt;Split with family / flatmates&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="payer" value="employer"&gt; &lt;span&gt;My employer covers some&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="payer" value="mixed"&gt; &lt;span&gt;Mix of the above&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;How many people in your household actively use the subscriptions you pay for?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="users_count" value="1"&gt; &lt;span&gt;Just me&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="users_count" value="2"&gt; &lt;span&gt;2 people&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="users_count" value="3-4"&gt; &lt;span&gt;3–4 people&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="users_count" value="5+"&gt; &lt;span&gt;5 or more&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;How do you typically pay for subscriptions?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;Select all that apply.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="payment_method" value="upi"&gt; &lt;span&gt;UPI (PhonePe, GPay)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="payment_method" value="credit_card"&gt; &lt;span&gt;Credit card&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="payment_method" value="debit_card"&gt; &lt;span&gt;Debit card&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="payment_method" value="telecom"&gt; &lt;span&gt;Telecom bundled (Jio/Airtel)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="payment_method" value="app_store"&gt; &lt;span&gt;App Store / Play Store&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="payment_method" value="cash"&gt; &lt;span&gt;Gift card / cash&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Do you prefer annual or monthly plans?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="plan_freq" value="annual"&gt; &lt;span&gt;Annual (saves money)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="plan_freq" value="monthly"&gt; &lt;span&gt;Monthly (flexibility)&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="plan_freq" value="mixed"&gt; &lt;span&gt;Mix of both&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="plan_freq" value="no_preference"&gt; &lt;span&gt;No preference&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SECTION 4: HABITS &amp; PSYCHOLOGY --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;&lt;span class="section-number"&gt;4&lt;/span&gt;Habits &amp; Psychology&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Have you ever forgotten you were subscribed to something and discovered it on your bank statement?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="forgotten" value="yes_multiple"&gt; &lt;span&gt;Yes, multiple times&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="forgotten" value="yes_once"&gt; &lt;span&gt;Yes, once or twice&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="forgotten" value="no"&gt; &lt;span&gt;No, I track everything&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;What typically pushes you from free → paid on a platform?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;Select all that apply.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid single-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="content"&gt; &lt;span&gt;Content / feature I needed was behind paywall&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="ads"&gt; &lt;span&gt;Too many ads on the free version&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="peer"&gt; &lt;span&gt;Friends/family recommended it&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="deal"&gt; &lt;span&gt;Got a good deal / offer&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="bundled"&gt; &lt;span&gt;It came bundled with something else&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="habit"&gt; &lt;span&gt;Had a trial and just stayed&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="checkbox" name="upgrade_trigger" value="work"&gt; &lt;span&gt;Work / professional need&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Have you cancelled a subscription in the past 12 months? If yes, why?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid single-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="cancel_reason" value="no_cancel"&gt; &lt;span&gt;I haven't cancelled any&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="cancel_reason" value="too_expensive"&gt; &lt;span&gt;Yes — it got too expensive&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="cancel_reason" value="not_using"&gt; &lt;span&gt;Yes — I stopped using it&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="cancel_reason" value="better_alt"&gt; &lt;span&gt;Yes — found a better alternative&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="cancel_reason" value="price_hike"&gt; &lt;span&gt;Yes — reacted to a price hike&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="cancel_reason" value="multiple"&gt; &lt;span&gt;Yes — multiple reasons&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;How do you feel about how much you spend on subscriptions?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="options-grid single-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="sentiment" value="worth_it"&gt; &lt;span&gt;Completely worth it — I use them all well&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="sentiment" value="mostly_ok"&gt; &lt;span&gt;Mostly okay, could trim one or two&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="sentiment" value="too_much"&gt; &lt;span&gt;I'm spending too much and need to cut back&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="option-label"&gt;&lt;input type="radio" name="sentiment" value="unsure"&gt; &lt;span&gt;Honestly, I haven't thought about it much&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SECTION 5: OPEN ENDS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="section-label"&gt;&lt;span class="section-number"&gt;5&lt;/span&gt;Your Take&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;If you had to cut your subscription spend by 50%, which would you keep and which would you drop?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;This tells us what's truly essential vs. nice-to-have.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea name="keep_vs_drop" placeholder="e.g. 'Would keep Netflix and Spotify. Would drop Zomato Gold and Google One...'"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Is there a subscription you pay for that you feel slightly embarrassed about or can't justify rationally?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-hint"&gt;Optional — but these are always the most interesting answers.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea name="guilty_sub" placeholder="e.g. 'I still pay for a gym app I haven't opened in 4 months...'"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question-label"&gt;Any other thoughts on how India's subscription culture has changed in the last 2–3 years?&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea name="open_thoughts" placeholder="Your thoughts..."&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="submit-area"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="submit" class="submit-btn"&gt;&lt;span&gt;Submit My Responses&lt;/span&gt;&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="submit-note"&gt;All responses are anonymous. Used only for editorial research.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="thankyou" id="thankYou"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="font-size:48px; margin-bottom:24px;"&gt;✦&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Thank you.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Your responses have been recorded. The findings will be published as part of our India subscription spending report.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function updateSlider(el, targetId) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const val = parseInt(el.value);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById(targetId).textContent = '₹' + val.toLocaleString('en-IN');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Progress tracking</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const form = document.getElementById('surveyForm');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const progress = document.getElementById('progress');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>function updateProgress() {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const inputs = form.querySelectorAll('input[type="radio"], input[type="checkbox"]');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const answered = new Set();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>inputs.forEach(i =&gt; { if (i.checked) answered.add(i.name); });</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const totalQuestions = 14;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const pct = Math.min(100, (answered.size / totalQuestions) * 100);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>progress.style.width = pct + '%';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>form.addEventListener('change', updateProgress);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>// Submit → Google Sheets</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyVS2AK9rkmtQ1aZmh2VaUiXo-M12znKiqibb41ehz1zY2gRBKIeX1C-xGKmH9DEJy9Ig/exec';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>form.addEventListener('submit', async function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>e.preventDefault();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const btn = form.querySelector('.submit-btn');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.innerHTML = '&lt;span&gt;Submitting…&lt;/span&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>btn.disabled = true;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Collect all fields</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const fd = new FormData(form);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Single-value fields</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const data = {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>age: <span class="Apple-converted-space">            </span>fd.get('age') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>city_tier: <span class="Apple-converted-space">      </span>fd.get('city_tier') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>income:<span class="Apple-converted-space">          </span>fd.get('income') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>household: <span class="Apple-converted-space">      </span>fd.get('household') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>estimated_spend: document.getElementById('guessSlider').value,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>actual_spend:<span class="Apple-converted-space">    </span>document.getElementById('actualSlider').value,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>payer: <span class="Apple-converted-space">          </span>fd.get('payer') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>users_count: <span class="Apple-converted-space">    </span>fd.get('users_count') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>plan_freq: <span class="Apple-converted-space">      </span>fd.get('plan_freq') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>forgotten: <span class="Apple-converted-space">      </span>fd.get('forgotten') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cancel_reason: <span class="Apple-converted-space">  </span>fd.get('cancel_reason') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sentiment: <span class="Apple-converted-space">      </span>fd.get('sentiment') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>keep_vs_drop:<span class="Apple-converted-space">    </span>fd.get('keep_vs_drop') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>guilty_sub:<span class="Apple-converted-space">      </span>fd.get('guilty_sub') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>open_thoughts: <span class="Apple-converted-space">  </span>fd.get('open_thoughts') || '',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Multi-select fields joined as comma-separated strings</p>
+<p class="p1"><span class="Apple-converted-space">      </span>subs:<span class="Apple-converted-space">            </span>fd.getAll('subs').join(', '),</p>
+<p class="p1"><span class="Apple-converted-space">      </span>payment_method:<span class="Apple-converted-space">  </span>fd.getAll('payment_method').join(', '),</p>
+<p class="p1"><span class="Apple-converted-space">      </span>upgrade_trigger: fd.getAll('upgrade_trigger').join(', '),</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>await fetch(SCRIPT_URL, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>mode: 'no-cors', // required for Apps Script</p>
+<p class="p1"><span class="Apple-converted-space">        </span>headers: { 'Content-Type': 'application/json' },</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body: JSON.stringify(data)</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} catch (err) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// no-cors means we won't get a readable response — treat as success</p>
+<p class="p1"><span class="Apple-converted-space">      </span>console.log('Submitted (no-cors):', err);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelector('.survey-form').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('thankYou').classList.add('visible');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>progress.style.width = '100%';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.scrollTo({ top: 0, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
